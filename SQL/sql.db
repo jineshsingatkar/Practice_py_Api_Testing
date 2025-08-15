@@ -1,0 +1,20 @@
+CREATE TABLE employees (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    first_name TEXT NOT NULL,
+    last_name TEXT NOT NULL,
+    email TEXT UNIQUE NOT NULL,
+    phone_number TEXT,
+    hire_date TEXT NOT NULL,
+    job_id TEXT NOT NULL,
+    salary REAL NOT NULL,
+    designation TEXT NOT NULL
+);
+
+INSERT INTO employees (first_name, last_name, email, phone_number, hire_date, job_id, salary, designation) VALUES
+('John', 'Doe', 'john.doe@example.com', '123-456-7890', '2023-01-15', 'DEV001', 75000.00, 'Software Engineer'),
+('Jane', 'Smith', 'jane.smith@example.com', '987-654-3210', '2022-11-01', 'QA002', 60000.00, 'QA Engineer'),
+('Peter', 'Jones', 'peter.jones@example.com', '555-123-4567', '2023-03-20', 'MGR003', 90000.00, 'Project Manager'),
+('Alice', 'Williams', 'alice.williams@example.com', '111-222-3333', '2023-02-10', 'DEV001', 80000.00, 'Senior Software Engineer'),
+('Bob', 'Brown', 'bob.brown@example.com', '444-555-6666', '2022-10-05', 'QA002', 62000.00, 'Senior QA Engineer'),
+('Charlie', 'Davis', 'charlie.davis@example.com', '777-888-9999', '2023-04-01', 'HR004', 55000.00, 'HR Specialist'),
+('Diana', 'Miller', 'diana.miller@example.com', '321-654-9870', '2023-05-12', 'MGR003', 92000.00, 'Senior Project Manager');
